@@ -9,9 +9,10 @@ def mean(vals):
         print "Something unknown happened with the list."
     return float(total)/length
 
-def mode(vals):
-    """Computes the mode from a list of values."""
-    pass
+def mode(numlist):
+    # added by Tyler
+    the_mode = max(numlist)
+    return the_mode
 
 def std(vals):
     """Computes the standard deviation from a list of values."""
@@ -29,3 +30,4 @@ def std(vals):
 def var(vals):
     """Computes the variance from a list of values."""
     pass
+
