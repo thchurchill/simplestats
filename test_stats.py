@@ -1,5 +1,5 @@
 from nose.tools import assert_equal, assert_almost_equal, assert_true, \
-    assert_false, assert_raises, assert_is_instance
+    assert_false, assert_raises, assert_is_instance, assert_greater
 
 from stats import mean, mode, std, var#, median
 
@@ -68,5 +68,10 @@ def test_std8():
     obs = std([1, 3])
     exp = 1.0
     assert_equal(obs, exp)
+
+def test_std42():
+    obs = std([1, 3, -5, 3, -10])
+    assert_greater(obs,0)
+
 
 # FIXME Put Variance tests here
