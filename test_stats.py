@@ -64,4 +64,9 @@ def test_std7():
     exp = NotImplemented
     assert_equal(obs, exp)
 
+def test_std8():
+    obs = std([1, 3])
+    exp = 1.0
+    assert_equal(obs, exp)
+
 # FIXME Put Variance tests here
